@@ -1,0 +1,21 @@
+body{
+	background-color: #fa6302
+}
+
+h1{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #183689
+}
+
+h2{
+	font-family: 'Roboto', sans-serif;
+}
+
+form{
+	font-family: 'Roboto', sans-serif;
+}
+
+button{
+	font-family: 'Roboto', sans-serif;
+}
