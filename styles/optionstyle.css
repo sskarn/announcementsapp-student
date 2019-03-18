@@ -8,6 +8,16 @@ h1{
 	color: #183689
 }
 
-h2, form, button, #submit{
-	font-family: 'Roboto', sans-serif;
+div{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#submit{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold
+}
+
+button{
+    font-family: 'Roboto', sans-serif;
 }
