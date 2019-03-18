@@ -2,15 +2,9 @@ body{
 	background-color: #fa6302
 }
 
-h1{
+h1, div{
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	color: #183689
-}
-
-div{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
 }
 
 button{
