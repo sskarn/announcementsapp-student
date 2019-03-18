@@ -8,6 +8,11 @@ h1{
 	color: #183689
 }
 
+div{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
 button{
 	font-family: 'Roboto', sans-serif;
 }
