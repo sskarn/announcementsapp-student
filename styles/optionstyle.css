@@ -1,5 +1,5 @@
 body{
-	background-color: #fa6302
+	background-color: #fa6302;
 }
 
 h1, div{
@@ -9,7 +9,7 @@ h1, div{
 
 #submit{
     font-family: 'Roboto', sans-serif;
-    font-weight: bold
+    font-weight: bold;
 }
 
 button{
