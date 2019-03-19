@@ -7,6 +7,11 @@ h1, div{
 	font-family: 'Roboto', sans-serif;
 }
 
+img{
+	max-width: 10%;
+	height: auto;
+}
+
 button{
 	font-family: 'Roboto', sans-serif;
 }
