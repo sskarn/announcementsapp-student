@@ -1,16 +1,16 @@
-var annGrade;
-var annGender;
-var annClub;
+var studentGrade;
+var studentGender;
+var studentClub;
 var studentNumber;
 
 function getData() {
-annGrade = document.getElementById("grade").value;
-annGender = document.getElementById("gender").value;
-annClub = document.getElementById("club").value;
+studentGrade = document.getElementById("grade").value;
+studentGender = document.getElementById("gender").value;
+studentClub = document.getElementById("club").value;
 studentNumber = document.getElementById("student#").value;
-alert(annGrade + annGender + annClub + studentNumber);
-localStorage.setItem("Grade:", annGrade);
-localStorage.setItem("Gender:", annGender);
-localStorage.setItem("Club:", annClub);
+alert(studentGrade + studentGender + studentClub + studentNumber);
+localStorage.setItem("Student Grade:", studentGrade);
+localStorage.setItem("Student Gender:", studentGender);
+localStorage.setItem("Student Club:", studentClub);
 localStorage.setItem("Student Number:", studentNumber);
 }
