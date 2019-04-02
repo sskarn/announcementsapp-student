@@ -2,14 +2,22 @@ body{
 	background-color: #fa6302
 }
 
+img{
+	max-width: 10%;
+	height: auto;
+}
+
 h1, div{
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
 
-img{
-	max-width: 10%;
-	height: auto;
+h3{
+	color: #183689;
+}
+
+#announcement1{
+	border-style: solid;
 }
 
 button{
