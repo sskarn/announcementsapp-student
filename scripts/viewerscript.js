@@ -18,7 +18,16 @@ function readStorage() {
 	annGrade = localStorage.getItem("Grade:");
 	annGender = localStorage.getItem("Gender:");
 	annClub = localStorage.getItem("Club:");
-	document.getElementById("title").innerHTML = annTitle;
-	document.getElementById("details").innerHTML = annDetails;
 }
 	
+function displayAnnOne() {
+	if (annGrade = studentGrade && annGender = studentGender && annClub = studentClub) {
+		document.getElementById("title").innerHTML = annTitle;
+		document.getElementById("details").innerHTML = annDetails;
+	}
+}
+
+function start() {
+	readStorage();
+	displayAnnOne();
+}
