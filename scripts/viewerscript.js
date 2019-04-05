@@ -21,7 +21,7 @@ function readStorage() {
 }
 	
 function displayAnnOne() {
-	if (annGrade = studentGrade && annGender = studentGender && annClub = studentClub) {
+	if (annGrade === studentGrade && annGender === studentGender && annClub === studentClub) {
 		document.getElementById("title").innerHTML = annTitle;
 		document.getElementById("details").innerHTML = annDetails;
 	}
