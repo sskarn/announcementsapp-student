@@ -24,11 +24,7 @@ function displayAnnOne() {
 	if (annGrade === studentGrade && annGender === studentGender && annClub === studentClub) {
 		document.getElementById("title").innerHTML = annTitle;
 		document.getElementById("details").innerHTML = annDetails;
-	} else if (annClub === "allstudents") {
-		document.getElementById("title").innerHTML = annTitle;
-		document.getElementById("details").innerHTML = annDetails;	   
 	}
-}
 
 function start() {
 	readStorage();
