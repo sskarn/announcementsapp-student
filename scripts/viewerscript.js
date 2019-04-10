@@ -21,14 +21,13 @@ function readStorage() {
 }
 	
 function displayAnnOne() {
-	if (annGrade === studentGrade || annGrade === "allgrades"){
-		if (annGender === studentGender || annGender === "allgenders"){
-			if (annClub === studentClub || annClub === "allstudents"){
+	if (annGrade === studentGrade || annGrade === "allgrades") {
+		if (annGender === studentGender || annGender === "allgenders") {
+			if (annClub === studentClub || annClub === "allstudents") {
 				document.getElementById("title").innerHTML = annTitle;
 				document.getElementById("details").innerHTML = annDetails;
 			}
 		}
-		
 	}
 }
 
