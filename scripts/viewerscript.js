@@ -21,10 +21,16 @@ function readStorage() {
 }
 	
 function displayAnnOne() {
-	if (annGrade === studentGrade && annGender === studentGender && annClub === studentClub) {
-		document.getElementById("title").innerHTML = annTitle;
-		document.getElementById("details").innerHTML = annDetails;
+	if (annGrade === studentGrade || annGrade === "allgrades"){
+		if (annGender === studentGender || annGender === "allgenders"){
+			if (annClub === studentClub || annClub === "allstudents"){
+				document.getElementById("title").innerHTML = annTitle;
+				document.getElementById("details").innerHTML = annDetails;
+			}
+		}
+		
 	}
+}
 
 function start() {
 	readStorage();
