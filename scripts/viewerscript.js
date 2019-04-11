@@ -2,22 +2,22 @@ var studentGrade;
 var studentGender;
 var studentClub;
 var studentNumber;
-var annTitle;
-var annDetails;
-var annGrade;
-var annGender;
-var annClub;
+var annTitle = [];
+var annDetails = [];
+var annGrade = [];
+var annGender = [];
+var annClub = [];
 
 function readStorage() {
 	studentGrade = localStorage.getItem("Student Grade:");
 	studentGender = localStorage.getItem("Student Gender:");
 	studentClub = localStorage.getItem("Student Club:");
 	studentNumber = localStorage.getItem("Student Number:");
-	annTitle = localStorage.getItem("Title:");
-	annDetails = localStorage.getItem("Details:");
-	annGrade = localStorage.getItem("Grade:");
-	annGender = localStorage.getItem("Gender:");
-	annClub = localStorage.getItem("Club:");
+	annTitle = JSON.parse(localStorage.getItem("Title:"));
+	annDetails = JSON.parse(localStorage.getItem("Details:"));
+	annGrade = JSON.parse(localStorage.getItem("Grade:"));
+	annGender = JSON.parse(localStorage.getItem("Gender:"));
+	annClub = JSON.parse(localStorage.getItem("Club:"));
 }
 	
 function displayAnnOne() {
