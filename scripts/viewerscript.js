@@ -7,6 +7,8 @@ var annDetails = [];
 var annGrade = [];
 var annGender = [];
 var annClub = [];
+var allDetails = "";
+var allTitles = "";
 
 function readStorage() {
 	studentGrade = localStorage.getItem("Student Grade:");
@@ -20,18 +22,22 @@ function readStorage() {
 	annClub = JSON.parse(localStorage.getItem("Club:"));
 }
 	
-function displayAnnOne() {
-	if (annGrade === studentGrade || annGrade === "allgrades") {
-		if (annGender === studentGender || annGender === "allgenders") {
-			if (annClub === studentClub || annClub === "allstudents") {
-				document.getElementById("title").innerHTML = annTitle;
-				document.getElementById("details").innerHTML = annDetails;
+function displayAnn() {
+	for (var index = 0; index < annDetails.length; index += 1) {
+		if (annGrade[index] === studentGrade || annGrade[index] === "allgrades") {
+			if (annGender[index] === studentGender || annGender[index] === "allgenders") {
+				if (annClub[index] === studentClub || annClub[index] === "allstudents") {
+					allTitles += annTitle[index] + "<br>";
+					allDetails += annDetails[index] + "<br>";
+				}
 			}
 		}
-	}
+	}		
+	document.getElementById("title").innerHTML = allTitles;
+	document.getElementById("details").innerHTML = allDetails;
 }
 
 function start() {
 	readStorage();
-	displayAnnOne();
+	displayAnn();
 }
