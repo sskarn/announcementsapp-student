@@ -12,6 +12,10 @@ img{
 	height: auto;
 }
 
+#profileselector{
+	border-style: solid;
+}
+
 #submit{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
