@@ -6,14 +6,13 @@
 	<link rel="stylesheet" href="styles/optionstyle.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 </head>
-<body>
-	<div>
-		<img src="images/NPSSLogo.png">
-	</div>	
+<body onload="displayProfile()">
+	<img src="images/NPSSLogo.png">
 	<div id="profileselector">
-		<h1>Your Student Profile:</h1>
+		<h1>Change Your Student Profile:</h1>
         <h2>Grade:</h2>
         <select id="grade">
+			<option hidden disabled selected value></option>
 			<option value="9">9</option>
 			<option value="10">10</option>
 			<option value="11">11</option>
@@ -21,11 +20,13 @@
 		</select>   
 		<h2>Gender:</h2>
 		<select id="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
+			<option hidden disabled selected value></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
         </select>
         <h2>Club:</h2>
         <select id="club">
+			<option hidden disabled selected value></option>
             <option value="DECA">DECA
             <option value="Abstract">Abstract
             <option value="Stage Crew">Stage Crew
@@ -35,12 +36,17 @@
         </select>
         <h2>Student Number:</h2>
         <input type="number" id="student#" min="100000" max="999999">
-    </div>    
+		<br><br>
+        <input type="submit" onclick="update()" id="submit" value="Submit Options">
+		<br><br>
+	</div>
 	<br>
-    <div>
-        <input type="submit" onclick="getData()" id="submit" value="Submit Options">
-		<br><br><br><br>
-        <a href="viewer.html"><button>Go to Viewer</button></a>
-    </div>    
+	<div id="profileviewer">
+		<h3>Your Current Student Profile Settings Are:</h3>
+		<div id="currentprofile">
+		</div>
+	</div>
+	<br>	
+    <a href="viewer.html"><button>Go to Viewer</button></a> 
 </body>
 </html>
