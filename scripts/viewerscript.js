@@ -7,6 +7,7 @@ var annDetails = [];
 var annGrade = [];
 var annGender = [];
 var annClub = [];
+var annDateTime = [];
 var allTitlesDetails = "";
 
 function readStorage() {
@@ -19,6 +20,7 @@ function readStorage() {
 	annGrade = JSON.parse(localStorage.getItem("Grade:"));
 	annGender = JSON.parse(localStorage.getItem("Gender:"));
 	annClub = JSON.parse(localStorage.getItem("Club:"));
+    annDateTime = JSON.parse(localStorage.getItem("DateTime:"))
 }
 	
 function displayAnn() {
@@ -26,7 +28,7 @@ function displayAnn() {
 		if (annGrade[index] === studentGrade || annGrade[index] === "allgrades") {
 			if (annGender[index] === studentGender || annGender[index] === "allgenders") {
 				if (annClub[index] === studentClub || annClub[index] === "allstudents") {
-					allTitlesDetails += "<h3>" + annTitle[index] + "</h3>" + "<p>" + annDetails[index] + "</p>";
+					allTitlesDetails += "<h2>" + annDateTime[index] + "</h2>" + "<h3>" + annTitle[index] + "</h3>" + "<p>" + annDetails[index] + "</p>";
 				}
 			}
 		}
