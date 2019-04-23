@@ -1,7 +1,7 @@
 # announcementsapp-student
 Grade 11 ICS Assignment
 
-1. Add Comments: Name, Course Code, Date, Description
+1. Add Comments: Name, Course Code, Date, Description (top of JS, top of function)
 
 
 Possible Added Features
