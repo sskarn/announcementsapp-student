@@ -27,12 +27,23 @@
         <h2>Club:</h2>
         <select id="club">
 			<option hidden disabled selected value></option>
-            <option value="DECA">DECA
-            <option value="Abstract">Abstract
-            <option value="Stage Crew">Stage Crew
-            <option value="Link Crew">Link Crew
-            <option value="YES4MH">YES4MH
-            <option value="HOSA">HOSA
+			<optgroup label="Academics">
+				<option value="DECA">DECA</option>
+				<option value="HOSA">HOSA</option>
+			<optgroup label="Arts">
+				<option value="Abstract">Abstract Singers</option>
+				<option value="Arts Council">Arts Council</option>
+				<option value="Concert Band">Concert Band</option>
+			</optgroup>
+			<optgroup label="Improvers">
+				<option value="Link Crew">Link Crew</option>
+				<option value="Stage Crew">Stage Crew</option>
+				<option value="YES4MH">YES4MH</option>
+			</optgroup>
+			<optgroup label="Sports">
+				<option value="Ultimate">Ultimate</option>
+				<option value="Volleyball Club">Volleyball Club</option>
+			</optgroup>
         </select>
         <h2>Student Number:</h2>
         <input type="number" id="student#" min="100000" max="999999">
