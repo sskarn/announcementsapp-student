@@ -1,23 +1,23 @@
-body{
+body {
 	background-color: #fa6302;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
 
-img{
+img {
 	max-width: 15%;
 	height: auto;
 }
 
-h3{
+h3 {
 	color: #183689;
 }
 
-#filteredannouncements{
+#filteredannouncements {
 	border-style: solid;
 }
 
-button{
+button {
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 }

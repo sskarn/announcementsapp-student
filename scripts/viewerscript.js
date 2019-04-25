@@ -22,9 +22,9 @@ function readStorage() {
 	annGender = JSON.parse(localStorage.getItem("AnnGender:"));
 	annClub = JSON.parse(localStorage.getItem("AnnClub:"));
 	annStudentNumber = JSON.parse(localStorage.getItem("AnnStudentNumber:"));
-    annDateTime = JSON.parse(localStorage.getItem("AnnDateTime:"));
+	annDateTime = JSON.parse(localStorage.getItem("AnnDateTime:"));
 }
-	
+
 function displayAnn() {
 	for (var index = 0; index < annDetails.length; index += 1) {
 		if (annGrade[index] === studentGrade || annGrade[index] === "allgrades") {
@@ -34,7 +34,7 @@ function displayAnn() {
 				}
 			}
 		}
-	}		
+	}
 	document.getElementById("filteredannouncements").innerHTML = allTitlesDetails;
 }
 

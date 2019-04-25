@@ -1,33 +1,35 @@
-body{
+body {
 	background-color: #fa6302;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
 
-img{
+img {
 	max-width: 15%;
 	height: auto;
 }
 
-#profileselector{
+#profileselector {
 	border-style: solid;
 	background-color: #fa9f02;
 	margin-left: 30%;
 	margin-right: 30%;
 }
 
-#profileviewer{
+#profileviewer {
 	border-style: solid;
 	background-color: #fa2302;
 	margin-left: 37.5%;
 	margin-right: 37.5%;
 }
 
-h3{
+h3 {
 	margin-bottom: -15px;
 }
 
-#submit, select, button{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+#submit,
+select,
+button {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
 }
