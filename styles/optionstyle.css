@@ -1,35 +1,51 @@
+/* Karnbir Saini */
+/* ICS3UR-B */
+/* April 25, 2019 */
+/* Student Options CSS */
+
 body {
-	background-color: #fa6302;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
+    background-color: #fa6302;
+    /* set webpage background colour to orange */
+    text-align: center;
+    /* all text is center-aligned */
+    font-family: 'Roboto', sans-serif;
+    /* all text is in font Roboto Slab or sans-serif in case of failure to load font */
 }
 
 img {
-	max-width: 15%;
-	height: auto;
+    max-width: 15%;
+    /* sets NPSS logo image to 15% of its pixel width */
+    height: auto;
+    /* allows for aspect ratio to be maintained */
 }
 
 #profileselector {
-	border-style: solid;
-	background-color: #fa9f02;
-	margin-left: 30%;
-	margin-right: 30%;
+    border-style: solid;
+    /* solid border around div element */
+    background-color: #fa9f02;
+    /* light orange background */
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 #profileviewer {
-	border-style: solid;
-	background-color: #fa2302;
-	margin-left: 37.5%;
-	margin-right: 37.5%;
+    border-style: solid;
+    /* solid border around div element */
+    background-color: #fa2302;
+    /* red-orange background */
+    margin-left: 37.5%;
+    margin-right: 37.5%;
 }
 
 h3 {
-	margin-bottom: -15px;
+    margin-bottom: -15px;
+    /* Removes spacing after "Your Current Student Profile:" text */
 }
 
 #submit,
 select,
 button {
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    /* requires extra CSS to set font (doesn't work with just body CSS) + text is bolded */
 }
