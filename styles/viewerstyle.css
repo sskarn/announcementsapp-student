@@ -1,23 +1,35 @@
+/* Karnbir Saini */
+/* ICS3UR-B */
+/* April 25, 2019 */
+/* Student Options CSS */
+
 body {
-	background-color: #fa6302;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
+    background-color: #fa6302;
+    /* set webpage background colour to orange */
+    text-align: center;
+    /* all text is center-aligned */
+    font-family: 'Roboto', sans-serif;
+    /* all text is in font Roboto Slab or sans-serif in case of failure to load font */
 }
 
 img {
-	max-width: 15%;
-	height: auto;
+    max-width: 15%;
+    /* sets NPSS logo image to 15% of its pixel width */
+    height: auto;
+    /* allows for aspect ratio to be maintained */
 }
 
 h3 {
-	color: #183689;
+    color: #183689;
 }
 
 #filteredannouncements {
-	border-style: solid;
+    border-style: solid;
+    /* solid border around div element */
 }
 
 button {
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    /* requires extra CSS to set font (doesn't work with just body CSS) + text is bolded */
 }
