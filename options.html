@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html>
+<!--
+Karnbir Saini
+ICS3UR-B
+April 28, 2019
+Student Profile Options HTML
+https://github.com/sskarn/announcementsapp-student
+-->
 
 <head>
-	<title>Student Options</title>
-	<script src="scripts/optionscript.js"></script>
-	<link rel="stylesheet" href="styles/optionstyle.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <!-- title for browser toolbar/tab, JavaScript source reference, CSS stylesheet reference, Roboto font reference for CSS -->
+    <title>Student Options</title>
+    <script src="scripts/optionscript.js"></script>
+    <link rel="stylesheet" href="styles/optionstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 </head>
 
 <body onload="displayProfile()">
-	<img src="images/NPSSLogo.png">
-	<div id="profileselector">
-		<h1>Modify Your Student Profile:</h1>
-		<h2>Grade:</h2>
-		<select id="grade">
-			<option hidden disabled selected value></option>
-			<option value="9">9</option>
-			<option value="10">10</option>
-			<option value="11">11</option>
-			<option value="12">12</option>
-		</select>
-		<h2>Gender:</h2>
-		<select id="gender">
-			<option hidden disabled selected value></option>
-			<option value="Male">Male</option>
-			<option value="Female">Female</option>
-		</select>
-		<h2>Club:</h2>
-		<select id="club">
-			<option hidden disabled selected value></option>
-			<optgroup label="Academics">
-				<option value="DECA">DECA</option>
-				<option value="HOSA">HOSA</option>
-			<optgroup label="Arts">
-				<option value="Abstract">Abstract Singers</option>
-				<option value="Arts Council">Arts Council</option>
-				<option value="Concert Band">Concert Band</option>
-			</optgroup>
-			<optgroup label="Improvers">
-				<option value="Link Crew">Link Crew</option>
-				<option value="Stage Crew">Stage Crew</option>
-				<option value="YES4MH">YES4MH</option>
-			</optgroup>
-			<optgroup label="Sports">
-				<option value="Ultimate">Ultimate</option>
-				<option value="Volleyball Club">Volleyball Club</option>
-			</optgroup>
-		</select>
-		<h2>Student Number:</h2>
-		<input type="number" id="student#" min="100000" max="999999">
-		<br><br>
-		<input type="submit" onclick="update()" id="submit" value="Submit Options">
-		<br><br>
-	</div>
-	<br>
-	<div id="profileviewer">
-		<h3>Your Current Student Profile:</h3>
-		<div id="currentprofile">
-		</div>
-	</div>
-	<br>
-	<a href="viewer.html"><button>Go to Viewer</button></a>
+    <img src="images/NPSSLogo.png">
+    <div id="profileselector">
+        <h1>Modify Your Student Profile:</h1>
+        <h2>Grade:</h2>
+        <select id="grade">
+            <option hidden disabled selected value></option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <h2>Gender:</h2>
+        <select id="gender">
+            <option hidden disabled selected value></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <h2>Club:</h2>
+        <select id="club">
+            <option hidden disabled selected value></option>
+            <optgroup label="Academics">
+                <option value="DECA">DECA</option>
+                <option value="HOSA">HOSA</option>
+            <optgroup label="Arts">
+                <option value="Abstract">Abstract Singers</option>
+                <option value="Arts Council">Arts Council</option>
+                <option value="Concert Band">Concert Band</option>
+            </optgroup>
+            <optgroup label="Improvers">
+                <option value="Link Crew">Link Crew</option>
+                <option value="Stage Crew">Stage Crew</option>
+                <option value="YES4MH">YES4MH</option>
+            </optgroup>
+            <optgroup label="Sports">
+                <option value="Ultimate">Ultimate</option>
+                <option value="Volleyball Club">Volleyball Club</option>
+            </optgroup>
+        </select>
+        <h2>Student Number:</h2>
+        <input type="number" id="student#" min="100000" max="999999">
+        <br><br>
+        <input type="submit" onclick="update()" id="submit" value="Submit Options">
+        <br><br>
+    </div>
+    <br>
+    <div id="profileviewer">
+        <h3>Your Current Student Profile:</h3>
+        <div id="currentprofile">
+        </div>
+    </div>
+    <br>
+    <a href="viewer.html"><button>Go to Viewer</button></a>
 </body>
 
 </html>
